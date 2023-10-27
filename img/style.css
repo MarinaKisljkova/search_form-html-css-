@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #8b8888;
+}
+.search-box { /*блок в котором все находится - и инпут и кнопка*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);/*выставили ровно посередине блок */
+    background: #e8e4e804;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    
+}
+
+
+.search-btn { /*ссылка с картинкой лупы*/
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* сделали кружок из бордера вокруг картинки лупы */
+    background: #758;
+    display: flex; /* разместили по центру бэкграунда лупу */
+    justify-content: center;
+    align-items: center;
+}
+.search-box:hover > .search-txt { /*при наведении на основной див, инпут становится шириной 240 и повыше*/
+    width: 240px;
+    padding: 0 6px;
+}
+.search-box:hover > .search-btn {
+    background: rgb(247, 246, 248);
+}
+.search-txt { /* описываем инпут */
+    border: none;
+    border-bottom: solid black 3px;
+    background: #e8e4e800;
+    color: rgb(248, 245, 245);
+    outline: none;/*убрали границы инпута, которые появляются при нажатии */
+    float: left;
+    padding: 0;
+    font-size: 16px;
+    transition: 0.8s;/* Устанавливает эффект плавного перехода между двумя состояниями элемента, они могут быть определены с помощью псевдоэлемента :hover или :active, а также динамически через JavaScript. */
+    line-height: 40px;
+    width: 0px;
+
+}
